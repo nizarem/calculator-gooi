@@ -1,14 +1,14 @@
 from tkinter import *
 
-# Venster instellen
+
 root = Tk()
 root.title("JouwNaamRekenmachine")
 
-# Inputveld
+
 ingave = Entry(root, width=35, borderwidth=5)
 ingave.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
-# Globale variabelen voor berekeningen
+
 f_num = None
 math = None
 
@@ -68,7 +68,7 @@ def button_equal():
         else:
             ingave.insert(0, "Error")
 
-# Knoppen definiëren
+
 button_1 = Button(root, text="1", padx=40, pady=20, command=lambda: button_click(1))
 button_2 = Button(root, text="2", padx=40, pady=20, command=lambda: button_click(2))
 button_3 = Button(root, text="3", padx=40, pady=20, command=lambda: button_click(3))
@@ -88,7 +88,7 @@ button_subtract = Button(root, text="-", padx=41, pady=20, command=button_subtra
 button_multiply = Button(root, text="*", padx=40, pady=20, command=button_multiply)
 button_divide = Button(root, text="/", padx=41, pady=20, command=button_divide)
 
-# Knoppen op het scherm plaatsen
+
 button_1.grid(row=3, column=0)
 button_2.grid(row=3, column=1)
 button_3.grid(row=3, column=2)
